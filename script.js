@@ -19,3 +19,8 @@ accordionItemHeaders.forEach(accordionItemHeader => {
       }
     });
 });
+
+// Copyright
+const currentDate = new Date();
+let year = currentDate.getFullYear();
+            document.getElementById("year").outerHTML = year;
