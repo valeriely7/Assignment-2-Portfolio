@@ -133,6 +133,15 @@ img {
   border-image: linear-gradient(to right, green, yellow) 1;
 }
 
+/* ------Video -----*/
+.video-container{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+  padding: 10px;
+}
+
 /* --------FOOOTER------- */
 .footer-container {
   width: 100%;
@@ -183,12 +192,12 @@ img {
       height: 175px
   }
 
-  hero container h1 {
+  .hero container h1 {
       font-size: 1.2em;
   }
-
-  section {
-      margin: 10px;
-      padding: 10px;
+  iframe {
+    height: 200px;
+    max-width: 100%;
   }
 }
+
