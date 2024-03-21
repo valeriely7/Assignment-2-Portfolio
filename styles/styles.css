@@ -15,8 +15,6 @@
 
 .h1{
 margin-right: 15rem;
-
-  
 }
 
 /* ------------CONTENT------------- */
@@ -29,13 +27,13 @@ margin-right: 15rem;
 
 .about {
   background-color: #bfe7fb;
+}
 
-  img{
+  img {
     width: auto;
     height: 300px;
     margin-right: 2rem;
     padding: 4em;
-
   }
 
   .contents h1, p{
@@ -47,41 +45,22 @@ margin-right: 15rem;
     display: flex;
     justify-content: center;
   }
+/* ----cards---- */
 
-  /* Content Paragraph */
-  .content-container p{
-    width: fit-content;
-    padding: 5px;
-    margin-bottom: 1em;
-  }
-}
-
-/* Card Content */
 .card {
-    background-color: white;
-    border-radius: 0.25rem;
-    flex: 1;
-    width: 24rem;
-    padding: 1em;
+  background-color: red;
+  border: 15px green;
+  border-radius: 10px blue;
+  padding: 15px;
+  text-align: center;
 }
 
-img {
-    border-radius: 0.25rem 0.25rem 0 0;
-    height: auto;
-    width: 100%;
-  }
-
-  .Flavour {
-    margin: 3rem auto;
-    max-width: 75rem;
-    padding: 3rem 1.5rem;
-    position: space;
-  }
-
-  .card-container{
-    display: flex;
-    justify-content: space-evenly;
-  }
+.cards-container{
+  display:grid;
+  grid-template-columns: repeat(autofill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
   
   /* Accordion */
   .accordion{
@@ -147,9 +126,10 @@ img {
   width: 100%;
   height: 300px;
   position: relative;
+  margin-top: 6rem;
 }
 
-/* Footer Pink Background*/
+/* Footer Background*/
 .footer{
   background-color: #f36d44;
   display: flex;
@@ -172,8 +152,9 @@ img {
     min-height: 50vh;
 
   }
-
 }    
+
+
 /* Tablets (screens smaller than 768px)  */
 @media (max-width: 768px) {
   header h1 {
@@ -200,4 +181,3 @@ img {
     max-width: 100%;
   }
 }
-
