@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+body {
+  font-family: "Titillium Web", "Calibri", "Arial", sans-serif;
+  font-weight: 400, 100;
+  font-style: normal;
+}
 
 /* Hero Banner */
 .hero-container{
@@ -11,12 +17,13 @@
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  color: #fff;
 
-  .hero-container h1{
-    margin-left: 15rem;
+.hero-container h1{
+  text-wrap: wrap;
   }
 }
+
+
 
 /* ------------CONTENT------------- */
 .about li{
@@ -56,7 +63,7 @@ section {
   /* ----cards---- */
 
   .card {
-    border: 1px solid pink;
+    border: 1px solid black;
     border-radius: 8px;
     text-align: center;
     display: flex;
@@ -177,6 +184,10 @@ section {
   .hero-container{
     min-height: 900px;
     background-size: contain;
+  }
+
+  .hero-container h1{
+    font-size: 1.2git em;
   }
 
 }
