@@ -1,3 +1,12 @@
+
+//Button
+const send = document.getElementById("btn-alert");
+    let sent = "Hello World";
+    send.addEventListener("click", () => {
+        alert(sent);
+    })
+
+    
 //Accordion
 
 const accordionItemHeaders = document.querySelectorAll(".accordion-header");
