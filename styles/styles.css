@@ -1,20 +1,25 @@
+
+
+
 /* Hero Banner */
-.hero-container {
-  display: flex;
-  align-items: center;
+
+.hero-container{
   justify-content: center;
+  position: relative;
+  align-items: center;
   background: url(../assets/Banner.jpg);
-  color: #fff;
   min-height: 100vh;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  flex-direction: column;
+  color: #fff;
 }
 
-.h1{
-margin-right: 15rem;
+.hero-container h1{
+margin-left: 15rem;
+
 }
 
 /* ------------CONTENT------------- */
@@ -57,7 +62,7 @@ section {
 .card {
   border: 1px solid white;
   border-radius: 8px;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -74,8 +79,6 @@ section {
 .cards-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- /*  display: flex; */
-  /* justify-content: center; */
   gap: 20px;
   padding: 10px;
 }
@@ -120,7 +123,7 @@ section {
     display: inline;
     width: 1em;
     position: absolute;
-    right: 15px;
+    right: 20px;
   }
 
   /* .accordion-header::after {
@@ -176,62 +179,39 @@ section {
   padding: 2rem;
 }
 
-/* Media Query */
-
-/* @media screen and (max-width: 768px) {
-  .content-container img{
-    height: auto;
-    width: 100%;
-    margin: 2em;
-  }
-
-  .hero-container{
-    min-height: 50vh;
-
-  }
-}     */
-
-
 /* Tablets (screens smaller than 768px)  */
 @media (max-width: 768px) {
+  
+  .hero-container{
+    min-height: 500px;
+  }
   .card img{
     max-width: 250px;
     margin: 10px;
     padding: 10px;
-  }
-  header h1 {
-      font-size: 1.5em;
-  }
-  }
-  
+    }
 
-
-
-  /* Other styles for tablet view */
+  }
 
 
 /* Mobile phones (screens smaller than 480px) */
 @media (max-width: 480px) {
+  
+  .hero-container{
+    min-height: 480px;
+  }
   .card img{
-    max-width: 100px;
-  }
-
-  .hero-container {
-      padding: 10px 0;
-      height: 175px
-  }
-
-  .hero container h1 {
-      font-size: 1.2em;
-  }
+    max-width: 275px;
+    }
 
   section{
-    margin: 10px;
-    padding: 10px;
-  }
+    margin: 5px;
+    padding: 5px;
+    }
 
   iframe {
     height: 200px;
     max-width: 100%;
-  }
+    }
+
 }
