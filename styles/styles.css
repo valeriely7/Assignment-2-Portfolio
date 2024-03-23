@@ -204,6 +204,11 @@ section {
     font-size: 1em;
   }
 
+  .about img{
+    width: 300px;
+    height: auto;
+  }
+
   .card img{
     max-width: 250px;
     margin: 10px;
@@ -222,6 +227,16 @@ section {
 
   .hero-container h1{
     font-size: 0.5em;
+  }
+
+  .about img{
+    width: 250px;
+
+  }
+
+  .card img{
+    min-width: 300px;
+    padding: 10px;
   }
 
   section{
