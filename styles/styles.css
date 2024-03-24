@@ -28,19 +28,19 @@ body {
 
 
 /* ------------CONTENT------------- */
-.about li{
+.about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .about {
   background-color: #bfe7fb;
   img {
-    width: 80%;
+    width: 25vw;
     height: auto;
-    margin-right: 1rem;
     padding: 4em;
   }
   .contents h1, p{
@@ -154,7 +154,7 @@ section {
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 2px solid;
-  border-image: linear-gradient(to right, green, yellow) 1;
+  border-image: linear-gradient(to right, orange, yellow) 1;
 }
 
 /* ------Video -----*/
@@ -195,7 +195,7 @@ section {
 }
 
 /* Tablets (screens smaller than 768px)  */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   
   .hero-container{
     background-size: contain;
@@ -225,9 +225,6 @@ section {
     height: auto;
   }
 
-  .hero-container h1{
-    /* font-size: 0.5em; */
-  }
 
   .about img{
     width: 250px;
