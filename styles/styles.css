@@ -12,16 +12,21 @@ body {
   justify-content: center;
   align-items: center;
   background: url(../assets/Banner.jpg);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  aspect-ratio: 1.5;
 
-.hero-container h1{
-  text-wrap: wrap;
+  h1{
+  text-wrap: nowrap;
+  margin-left: 30%;
+  margin-right: 10%;
+  font-size: 3vw;
   }
 }
+
 
 
 
@@ -38,7 +43,7 @@ body {
   img {
     width: auto;
     height: 500px;
-    margin-right: 2rem;
+    margin-right: 1rem;
     padding: 4em;
   }
 }
@@ -182,12 +187,11 @@ section {
 @media (max-width: 1400px) {
   
   .hero-container{
-    min-height: 900px;
     background-size: contain;
   }
 
   .hero-container h1{
-    font-size: 1.2git em;
+    /* font-size: 1.2git em; */
   }
 
 }
@@ -196,12 +200,11 @@ section {
 @media (max-width: 768px) {
   
   .hero-container{
-    min-height: 450px;
     background-size: contain;
   }
 
   .hero-container h1{
-    font-size: 1em;
+    /* font-size: 1em; */
   }
 
   .about img{
@@ -222,16 +225,16 @@ section {
 @media (max-width: 480px) {
   
   .hero-container{
-    min-height: 300px;
+    height: auto;
   }
 
   .hero-container h1{
-    font-size: 0.5em;
+    /* font-size: 0.5em; */
   }
 
   .about img{
     width: 250px;
-
+    height: auto;
   }
 
   .card img{
