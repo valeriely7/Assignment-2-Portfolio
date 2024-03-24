@@ -12,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   background: url(../assets/Banner.jpg);
-  /* min-height: 100vh; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,8 +27,6 @@ body {
 }
 
 
-
-
 /* ------------CONTENT------------- */
 .about li{
   display: flex;
@@ -41,17 +38,16 @@ body {
 .about {
   background-color: #bfe7fb;
   img {
-    width: auto;
-    height: 500px;
+    width: 80%;
+    height: auto;
     margin-right: 1rem;
     padding: 4em;
   }
-}
-
   .contents h1, p{
     text-align: center;
     max-width: 400px;
   }
+} 
 
   .center-wrapper{
     display: flex;
@@ -75,28 +71,34 @@ section {
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    width: min-content;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
 
+    p{
+      max-width: 100%;
+    }
   }
 
 
   .card img{
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     border-radius: 8px;
-    margin: 1em;
   }
 
   .card h3{
-    min-width: 500px;
     font-size: 1.2em;
+
   }
   
 
 .cards-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
   
   /* Accordion */
@@ -183,15 +185,11 @@ section {
 }
 
 
-/* Desktop (1200px) */
+/* Desktop (1400px) */
 @media (max-width: 1400px) {
   
   .hero-container{
     background-size: contain;
-  }
-
-  .hero-container h1{
-    /* font-size: 1.2git em; */
   }
 
 }
@@ -203,20 +201,19 @@ section {
     background-size: contain;
   }
 
-  .hero-container h1{
-    /* font-size: 1em; */
-  }
-
   .about img{
     width: 300px;
     height: auto;
   }
 
   .card img{
-    max-width: 250px;
-    margin: 10px;
-    padding: 10px;
-    }
+    max-width: 1400px;
+    width: 80vw;
+  }
+
+  .card h3, p{
+    max-width: 80vw;
+  }
 
   }
 
@@ -238,8 +235,7 @@ section {
   }
 
   .card img{
-    min-width: 300px;
-    padding: 10px;
+    width: 80vw;
   }
 
   section{
