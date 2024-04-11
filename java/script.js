@@ -33,3 +33,10 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 const currentDate = new Date();
 let year = currentDate.getFullYear();
             document.getElementById("year").outerHTML = year;
+
+//Accessbility
+document.getElementById('btn-alert').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        // trigger your button action
+    }
+});
