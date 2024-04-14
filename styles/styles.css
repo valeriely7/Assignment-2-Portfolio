@@ -7,21 +7,22 @@ body {
 }
 
 /* Hero Banner */
-.hero-container{
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../assets/Banner.jpg);
+  background: url(../assets/Boba\ Bar\ Banner\ Small\ again\ 2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  aspect-ratio: 1.5;
+  aspect-ratio: 2.8;
 
-  h1 {
+  h1{
   text-wrap: nowrap;
   margin-left: 30%;
   margin-right: 10%;
+  margin-top: 27%;
   font-size: 3vw;
   }
 }
@@ -244,12 +245,6 @@ section {
     height: 200px;
     max-width: 100%;
     }
-}
-
-/*Accessbility*/
-#btn-alert:focus {
-  outline: 2px solid blue; /* Example focus style */
-  outline-offset: 2px;
 }
 
 
