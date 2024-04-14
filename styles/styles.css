@@ -84,7 +84,7 @@ section {
 
 
   .card img{
-    max-width: 350px;
+    max-width: 25vw;
     height: auto;
     border-radius: 8px;
   }
@@ -247,4 +247,8 @@ section {
     }
 }
 
-
+/* Button Accessibility */
+#btn-alert:focus {
+  outline: 2px solid blue; /* Example focus style */
+  outline-offset: 2px;
+}
